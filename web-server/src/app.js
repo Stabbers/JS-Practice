@@ -7,6 +7,9 @@ const forecast = require('../utils/forecast')
 
 //config setup
 const app = express()
+
+const port = process.env.PORT || 3000
+
 const pubDir = path.join(__dirname, '../public')
 const templates = path.join(__dirname, '../templates/views')
 const partials = path.join(__dirname, '../templates/partials')
@@ -107,6 +110,6 @@ app.get('*', (req, res) => {
 })
 
 // server initialization. best practice: use nodemon, and port 3000
-app.listen(3000, () => {
-	console.log('the port is on three THOUSAAAND!')
+app.listen(port, () => {
+	console.log('the port is on ' + port)
 })
