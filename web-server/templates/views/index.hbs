@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Weather</title>
+	<link rel="icon" href="/box.jpg">
+	<link rel="stylesheet" href="/css/styles.css">
+
+</head>
+
+<body>
+	<div class="main-content">
+		{{>header}}
+		{{name}}
+
+		<p>use page to fetch weather</p>
+
+		<form>
+			<input placeholder = '(Location)'>
+			<button>Forcast</button>
+		</form>
+
+		<p id = 'msg1'>
+
+		</p>
+		<p id = 'msg2'>
+
+		</p>
+
+
+	</div>
+
+	{{!-- used here a form to ask for a location, and then provide a forcvast here --}}
+
+
+
+
+	{{>footer}}
+
+	<script src="/js/app.js"></script>
+</body>
+</html>
